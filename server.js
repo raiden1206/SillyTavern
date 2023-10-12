@@ -71,7 +71,6 @@ if (process.versions && process.versions.node && process.versions.node.match(/20
 }
 
 // Set default DNS resolution order to IPv4 first
-dns.setDefaultResultOrder('ipv4first');
 
 const cliArguments = yargs(hideBin(process.argv))
     .option('disableCsrf', {
